@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.AppBarLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/appbar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/appbar_gradient"
+    android:clipToPadding="false"
+    android:elevation="4dp"
+    android:paddingBottom="8dp"
+    android:paddingEnd="16dp"
+    android:paddingStart="16dp"
+    android:paddingTop="@dimen/status_bar_height"
+    android:stateListAnimator="@animator/appbar_always_elevated">
+
+    <android.support.design.widget.CollapsingToolbarLayout
+        android:layout_width="match_parent"
+        app:layout_scrollFlags="scroll|exitUntilCollapsed"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            app:layout_collapseMode="none"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:minHeight="0dp"
+                android:layout_height="?android:attr/actionBarSize"
+                android:theme="@style/Base.Theme.AppCompat.Light.DarkActionBar"/>
+
+            <ImageView
+                android:id="@+id/ola_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:adjustViewBounds="true"
+                android:paddingBottom="12dp"
+                android:minHeight="0dp"
+                android:paddingTop="8dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/ola_icon" />
+        </LinearLayout>
+
+    </android.support.design.widget.CollapsingToolbarLayout>
+
+    <FrameLayout
+        android:id="@+id/searchFragmentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.ogaclejapan.smarttablayout.SmartTabLayout
+        android:id="@+id/viewpagertab"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:elevation="4dp"
+        app:stl_defaultTabTextColor="@color/tab_text_color"
+        app:stl_defaultTabTextSize="18sp"
+        app:stl_dividerThickness="0dp"
+        app:stl_drawDecorationAfterTab="true"
+        app:stl_indicatorColor="@color/translucent_white"
+        app:stl_indicatorCornerRadius="20dp"
+        app:stl_indicatorGravity="center"
+        app:stl_indicatorThickness="40dp"
+        app:stl_indicatorWidth="40dp"
+        app:stl_underlineThickness="0dp" />
+
+</android.support.design.widget.AppBarLayout>

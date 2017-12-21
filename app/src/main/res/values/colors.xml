@@ -1,6 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#FF4081</color>
+    <color name="colorPrimary">#fff</color>
+    <color name="colorPrimaryDark">#ddd</color>
+    <color name="colorAccent">#fa735d</color>
+    <color name="coverImageBgColor">#999</color>
+    <color name="white">#fff</color>
+    <color name="searchBarBgColor">#77ffffff</color>
+    <color name="songTitleColor">#666</color>
+    <color name="songArtistColor">#444</color>
+    <color name="transparent">#0fff</color>
+    <color name="translucent_white">#5fff</color>
+    <color name="tab_text_color">#afff</color>
+    <color name="song_item_bg">#bbb</color>
+    <color name="notif_color">#aaa</color>
+    <color name="player_image_tint">#8fff</color>
+    <color name="playerTextColor">#a000</color>
+    <color name="highlighted_text_color">#448AFF</color>
 </resources>

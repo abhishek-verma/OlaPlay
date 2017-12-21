@@ -1,3 +1,26 @@
 <resources>
     <string name="app_name">Ola Play</string>
+    <string name="songTitle">Song Title</string>
+    <string name="songArtist">Song Artist</string>
+    <string name="fav">Star/Unstar this song</string>
+    <string name="options">Options</string>
+    <string name="search_hint">Search For A Song</string>
+    <string name="clear">Clear Search</string>
+    <string name="ola_play">OLA Play Studios</string>
+    <string name="song_added_to_playlist">Song successfully added to playlist</string>
+    <string name="download">Download This Song</string>
+    <string name="add_to_playlist">Add Song To Playlist</string>
+    <string name="show_downloads">SHOW</string>
+    <string name="download_started">Download Started</string>
+    <string name="create_new_playlist">Create New Playlist</string>
+    <string name="close_player">Close Player</string>
+    <string name="default_time">0:00</string>
+    <string name="pause_player">Pause Song</string>
+    <string name="create">Create</string>
+    <string name="filter_by_playlist">Filter By Playlist</string>
+    <string name="my_portfolio">My Portfolio</string>
+    <string name="show_songs_by_playlist">Show Songs By Playlist</string>
+    <string name="remove_from_playlist">Remove Song From Playlist</string>
+    <string name="cannot_connect_to_internet">Cannot Connect To Internet</string>
+    <string name="retry">RETRY</string>
 </resources>

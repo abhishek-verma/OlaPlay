@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/search_bar_bg"
+    android:padding="8dp"
+    android:alpha="0.8"
+    android:layout_marginTop="16dp"
+    android:layout_marginBottom="16dp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_search_24dp"
+        android:gravity="center_vertical"
+        android:padding="8dp"/>
+
+    <EditText
+        android:id="@+id/searchBarEdtV"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@android:color/transparent"
+        android:fontFamily="@font/roboto"
+        android:gravity="center_vertical"
+        android:hint="@string/search_hint"
+        android:inputType="text"
+        android:maxLines="1"
+        android:textColor="#fff"
+        android:textColorHint="#8fff"
+        android:textSize="@dimen/search_bar_txt_size" />
+
+    <ImageButton android:id="@+id/searchBarClearBtn"
+        android:layout_width="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_height="wrap_content"
+        android:background="?selectableItemBackgroundBorderless"
+        android:contentDescription="@string/clear"
+        app:srcCompat="@drawable/ic_clear_24dp"
+        android:padding="8dp"/>
+</LinearLayout>

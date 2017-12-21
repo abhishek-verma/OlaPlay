@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="song_title_size">24sp</dimen>
+    <dimen name="song_artist_size">14sp</dimen>
+    <dimen name="songItemPadding">8dp</dimen>
+    <dimen name="search_bar_txt_size">18sp</dimen>
+    <dimen name="search_bar_corner_radius">30dp</dimen>
+    <dimen name="cover_image_fade_length">0dp</dimen>
+    <dimen name="status_bar_height">24dp</dimen>
+    <dimen name="dialog_horizontal_margin">16dp</dimen>
+    <dimen name="dialog_text_size">6sp</dimen>
+    <dimen name="player_frag_full_height">160dp</dimen>
+    <dimen name="player_frag_collapsed_height">88dp</dimen>
+    <dimen name="player_frag_height_padding">92dp</dimen>
+</resources>

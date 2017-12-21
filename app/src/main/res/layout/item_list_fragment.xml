@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/itemRecyclerView"
+        android:background="@color/white"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:paddingBottom="@dimen/player_frag_height_padding"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>

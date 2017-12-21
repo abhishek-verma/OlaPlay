@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_with_shadow"
+    android:paddingTop="4dp">
+
+    <RelativeLayout
+        android:id="@+id/playerParent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/player_frag_collapsed_height"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingStart="16dp">
+
+            <ImageView
+                android:id="@+id/coverImgV"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop" />
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingEnd="16dp"
+                android:paddingStart="16dp">
+
+                <TextView
+                    android:id="@+id/songTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:lines="1"
+                    android:ellipsize="end"
+                    android:text="@string/songTitle"
+                    android:textColor="@color/playerTextColor"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/songArtist"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@id/songTitle"
+                    android:alpha="0.6"
+                    android:ellipsize="end"
+                    android:lines="1"
+                    android:text="@string/songArtist"
+                    android:textColor="@color/playerTextColor"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <ImageButton
+                android:id="@+id/playPauseBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:alpha="0.6"
+                android:background="?selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:contentDescription="@string/pause_player"
+                android:focusable="true"
+                android:padding="8dp"
+                app:srcCompat="@drawable/ic_pause_black_24dp" />
+
+            <ImageButton
+                android:id="@+id/closeBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:alpha="0.6"
+                android:background="?selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:contentDescription="@string/close_player"
+                android:focusable="true"
+                android:padding="8dp"
+                app:srcCompat="@drawable/ic_clear_black_24dp" />
+
+        </LinearLayout>
+
+        <android.support.v7.widget.AppCompatSeekBar
+            android:id="@+id/seekbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="24dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:id="@+id/currentTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/seekbar"
+            android:layout_alignLeft="@id/seekbar"
+            android:text="@string/default_time"
+            android:textColor="@color/playerTextColor" />
+
+        <TextView
+            android:id="@+id/trackLength"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/seekbar"
+            android:layout_alignRight="@id/seekbar"
+            android:text="@string/default_time"
+            android:textColor="@color/playerTextColor" />
+
+    </RelativeLayout>
+</FrameLayout>
